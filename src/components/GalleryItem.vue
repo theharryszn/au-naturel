@@ -18,7 +18,7 @@ const col = Math.ceil(Math.random() * 3)
     :class="`flex flex-col relative group col-span-${col}`"
   >
     <img
-      :src="image"
+      :src="'@/assets/images/gallery/' + image"
       class="bg-zinc-800/10 object-cover border border-transparent rounded-sm hover:border-zinc-50/10 transition-all duration-700 group-hover:scale-[1.01] grayscale group-hover:grayscale-0"
     />
     <div class="py-2 transition text-sm md:opacity-0 group-hover:opacity-100">
