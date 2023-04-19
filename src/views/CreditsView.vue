@@ -10,7 +10,11 @@ const libraries = ref(['TailwindCSS', 'VueJS', 'Locomotive Scroll', 'gsap', 'SAS
 </script>
 <template>
   <pageContainer>
-    <div class="opacity-10 text-[10rem] fixed bottom-0 font-extrabold translate-y-1/3">Credits</div>
+    <div
+      class="opacity-10 text-[6rem] md:text-[10rem] fixed bottom-0 font-extrabold translate-y-1/3"
+    >
+      Credits
+    </div>
     <div class="flex flex-col h-screen">
       <NavbarView />
       <main class="p-10 px-5 md:px-10 flex-1">

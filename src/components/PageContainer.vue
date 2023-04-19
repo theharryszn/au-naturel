@@ -140,6 +140,9 @@ export default {
   },
   updated() {
     this.setScroll()
+  },
+  onUnmounted() {
+    ScrollTrigger.removeEventListener('refresh', () => {})
   }
 }
 </script>
