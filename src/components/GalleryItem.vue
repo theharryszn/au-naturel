@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
+import { defineProps, ref } from 'vue'
 
 const props = defineProps({
   image: {
@@ -8,15 +8,15 @@ const props = defineProps({
   }
 })
 
-const speed = Math.floor(Math.random() * 3)
-const col = Math.ceil(Math.random() * 3)
+const speed = ref(Math.floor(Math.random() * 3))
+const col = ref(Math.ceil(Math.random() * 3))
 const imageUrl = new URL(`/src/assets/images/gallery/${props.image}`, import.meta.url).href
 </script>
 <template>
   <div
     data-scroll
     :data-scroll-speed="speed"
-    :class="`flex flex-col relative group col-span-full md:col-span-${col}`"
+    :class="`flex flex-col relative group col-span-1 md:col-span-${col}`"
   >
     <img
       :src="imageUrl"

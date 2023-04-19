@@ -76,6 +76,7 @@ onMounted(() => {
         },
         0
       )
+      .delay(2)
   }
 
   imgLoad.on('always', function () {

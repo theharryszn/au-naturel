@@ -17,7 +17,7 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  @apply flex flex-col items-center justify-center bg-zinc-50;
+  @apply flex flex-col items-center justify-center bg-zinc-50 dark:bg-zinc-950;
   overflow: hidden;
   z-index: 999;
 }
