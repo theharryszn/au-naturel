@@ -3,7 +3,7 @@
   <div class="preloader">
     <div class="flex items-center flex-1 justify-center p-10">
       <div class="animate-pulse">Photography is the purest form of art.</div>
-      <div class="absolute bottom-10 right-10 text-3xl" id="progress-indicator"></div>
+      <div class="absolute bottom-10 right-10 text-3xl" id="progress-indicator">0%</div>
     </div>
     <div id="pre-bottom-curtain-0" class="bg-zinc-100/5 h-screen w-full absolute top-[98%]"></div>
     <div id="pre-bottom-curtain-1" class="bg-zinc-500 h-screen w-full absolute top-[98%]"></div>

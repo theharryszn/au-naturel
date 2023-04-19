@@ -86,8 +86,7 @@ onMounted(() => {
 
   const pI = document.getElementById('progress-indicator')
 
-  imgLoad.on('progress', (_, image) => {
-    var result = image?.isLoaded ? 'loaded' : 'broken'
+  imgLoad.on('progress', () => {
     loaded++
     if (pI) {
       pI.innerText = ((loaded / images.length) * 100).toFixed(0) + '%'

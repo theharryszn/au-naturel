@@ -10,7 +10,7 @@ const { images } = useImageStore()
       v-bind:key="image"
       data-scroll
       :data-scroll-speed="Math.floor(Math.random() * 3)"
-      :class="'flex flex-col relative group ' + `col-span-${Math.floor(Math.random() * 3)}`"
+      :class="`flex flex-col relative group col-span-${Math.ceil(Math.random() * 3)}`"
     >
       <img
         :src="'/src/assets/images/gallery/' + image"

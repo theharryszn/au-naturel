@@ -25,10 +25,51 @@ const libraries = ref(['TailwindCSS', 'VueJS', 'Locomotive Scroll', 'gsap', 'SAS
               <div class="font-medium">Developed & Designed by</div>
               <div class="opacity-50 py-2">Abidemi Ope Harry</div>
             </div>
+            <div>
+              <div class="font-medium">Follow Me</div>
+              <div class="flex gap-5 flex-wrap gap-y-2 py-2">
+                <a
+                  href="https://twitter.com/theharryszn"
+                  class="text-sm opacity-50 hover:opacity-100 shrink"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >TWITTER</a
+                >
+                <a
+                  href="https://instagram.com/theharryszn"
+                  class="text-sm opacity-50 hover:opacity-100 shrink"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >INSTAGRAM</a
+                >
+                <a
+                  href="https://snapchat.com/add/theharryszn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-sm opacity-50 hover:opacity-100 shrink"
+                  >SNAPCHAT</a
+                >
+                <a
+                  href="https://open.spotify.com/user/31br6djiz7oburebyiscmbr4lqny?si=71fcf51fb70e4ca3"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="text-sm opacity-50 hover:opacity-100 shrink"
+                  >SPOTIFY</a
+                >
+              </div>
+            </div>
             <div class="col-start-1 col-span-1">
               <div class="font-medium">Featuring works from</div>
               <div class="grid py-2">
-                <div :key="name" v-for="name in names" class="opacity-50">{{ name }}</div>
+                <a
+                  :href="`https://instagram.com/${name}`"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  :key="name"
+                  v-for="name in names"
+                  class="opacity-50 shrink"
+                  >{{ name }}</a
+                >
               </div>
             </div>
             <div>
