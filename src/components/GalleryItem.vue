@@ -11,13 +11,12 @@ const props = defineProps({
 const speed = Math.floor(Math.random() * 3)
 const col = Math.ceil(Math.random() * 3)
 const imageUrl = new URL(`/src/assets/images/gallery/${props.image}`, import.meta.url).href
-console.log(imageUrl)
 </script>
 <template>
   <div
     data-scroll
     :data-scroll-speed="speed"
-    :class="`flex flex-col relative group col-span-${col}`"
+    :class="`flex flex-col relative group col-span-full md:col-span-${col}`"
   >
     <img
       :src="imageUrl"
