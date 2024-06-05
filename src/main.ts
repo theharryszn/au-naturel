@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import { inject } from '@vercel/analytics'
 
 import App from './App.vue'
 import router from './router'
@@ -18,3 +19,4 @@ app.use(init)
 app.use(locomotiveScroll)
 
 app.mount('#app')
+inject()
